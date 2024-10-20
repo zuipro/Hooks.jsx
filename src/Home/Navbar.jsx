@@ -8,7 +8,7 @@ const Navbar = () => {
       <header className="d-flex justify-content-center py-3 bg-dark">
         <ul className="nav nav-pills">
           <li className="nav-item"><a href="#" className="nav-link d-block" aria-current="page">Home</a></li>
-          <li className="nav-item"><a href="#" className="nav-link d-block">Features</a></li>
+          <li className="nav-item"><a href="#" className="nav-link d-block">DashBoard</a></li>
           <li className="nav-item"><a href="#" className="nav-link d-block">Pricing</a></li>
           <li className="nav-item"><a href="#" className="nav-link d-block">FAQs</a></li>
           <li className="nav-item"><a href="#" className="nav-link d-block">About</a></li>

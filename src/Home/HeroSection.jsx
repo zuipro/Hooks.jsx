@@ -1,15 +1,44 @@
 import React from 'react';
 import './HeroSection.css';
-import Navbar from './Navbar'; // Import the Navbar
-
+import Navbar from './Navbar';
+import img1 from './Hero-Images/event.png'; 
+import img2 from './Hero-Images/progress1.png'
+import img3 from './Hero-Images/achieve.png'
 const HeroSection = () => {
   return (
     <div className='Hero-Background'>
-      <Navbar /> {/* Add Navbar to HeroSection */}
+      <Navbar /> 
       <div className="hero-content">
-        <h1>Welcome to the Hero Section</h1>
-        <p>Your journey starts here</p>
+        <h1>Welcome to the Environment </h1>
       </div>
+      <div className='cards'>
+        <div className='card1'>
+          <div className="card-content">
+            <img src={img1} alt="Event" />
+            <div className="card-text">
+              <h2>Event Calender</h2>
+            </div>
+          </div>
+        </div>
+        <div className='card2'>
+          <div className="card-content">
+            <img src={img2} alt="Event" />
+            <div className="card-text">
+              <h2>Track Progress</h2>
+            </div>
+          </div>
+        </div>
+        <div className='card3'>
+          <div className="card-content">
+            <img src={img3} alt="Event" />
+            <div className="card-text">
+              <h2>Achievements</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
     </div>
   );
 }
