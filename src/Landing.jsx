@@ -91,10 +91,10 @@ const Landing = () => {
         <div className="layers__item layer-2" style={{ backgroundImage: `url(./public/img/layer-2.png)` }}></div>
         <div className="layers__item layer-3">
           <div className="hero-content">
-            <h1>Natural Forest <span>HTML / CSS</span></h1>
-            <div className="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div>
+            <h1>Green Track<span></span></h1>
+            <div className="hero-content__p"> Environment Sustainability Website </div>
             <Link to="/Home">
-              <button className="btn-start">Start Learning</button>
+              <button className="btn-start">Start Exploring</button>
              </Link>
           </div>
         </div>

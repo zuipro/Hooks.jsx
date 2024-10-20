@@ -2,50 +2,64 @@
 #calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    margin: 20px auto;
-    max-width: 700px;
-    background-color: #1E5128;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 750px;
+    background-color: #1F3A3D;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid #F0E9D2;
+  }
+  button{
+    margin-left: 30px;
+  }
+  input{
+    height: 41px;
+    border-radius: 5px;
   }
   
   /* Individual days styling */
   #calendar div {
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #4E9F3D;
-    color: #191A19;
-    font-weight: bold;
+    padding: 22px;
+    border-radius: 10px;
+    background-color: #52796F;
+    color: #F4F1DE;
+    font-weight: 600;
+    font-size: 18px;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   /* Hover effect on days */
   #calendar div:hover {
-    background-color: #D8E9A8;
-    color: #1E5128;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #F0E9D2;
+    color: #1F3A3D;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
   }
   
   /* Event details container */
   #eventDetails {
-    margin-top: 30px;
-    background-color: #1E5128;
-    color: #D8E9A8;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 700px;
+    margin-top: 40px;
+    background-color: #1F3A3D;
+    color: #F0E9D2;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #F4F1DE;
   }
   
   /* Event details heading */
   #eventDetails h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #F4F1DE;
   }
   
   /* Event list styling */
@@ -55,43 +69,59 @@
   }
   
   #eventDetails li {
-    background-color: #4E9F3D;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    color: #191A19;
+    background-color: #52796F;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #F4F1DE;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #eventDetails li:hover {
+    background-color: #F0E9D2;
+    color: #1F3A3D;
+    transform: translateY(-5px);
   }
   
   /* Event form */
   #eventForm {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   #eventForm input {
-    padding: 10px;
-    font-size: 16px;
-    width: 70%;
-    border: 2px solid #D8E9A8;
-    border-radius: 8px;
+    padding: 12px;
+    font-size: 17px;
+    width: 72%;
+    border: 2px solid #F4F1DE;
+    border-radius: 10px;
     margin-right: 10px;
-    background-color: #191A19;
-    color: #D8E9A8;
+    background-color: #2A403D;
+    color: #F4F1DE;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
   }
   
+  #eventForm input:focus {
+    outline: none;
+    border-color: #F0E9D2;
+    background-color: #3A554D;
+  }
+  
+  /* Add Event button */
   #eventForm button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4E9F3D;
-    color: #191A19;
+    padding: 12px 25px;
+    font-size: 17px;
+    background-color: #52796F;
+    color: #F4F1DE;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   }
   
-  /* Hover effect on the Add Event button */
   #eventForm button:hover {
-    background-color: #D8E9A8;
-    color: #1E5128;
+    background-color: #F0E9D2;
+    color: #1F3A3D;
+    transform: translateY(-3px);
   }

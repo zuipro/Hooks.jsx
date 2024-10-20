@@ -5,6 +5,8 @@ import Landing from './Landing';
 import Dashboard from './dashboard/Impactdashboard';
 import Calendar from './Calendar';
 import Achievements from './AchievementSection';
+import Progress from './Home/Progress'
+import Navbar from './Home/Navbar';
 const App = () => {
   return (
     <div>
@@ -15,6 +17,7 @@ const App = () => {
         <Route path="/Dashboard"  element={ <Dashboard />}/>
         <Route path="/Calendar"  element={ <Calendar />}/>
         <Route path="/Achievments"  element={ <Achievements />}/>
+        <Route path="/Progress"  element={ <Progress />}/>
         </Routes>
       </Router>
     </div>

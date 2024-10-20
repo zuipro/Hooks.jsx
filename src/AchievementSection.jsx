@@ -70,12 +70,12 @@ const AchievementSection = () => {
           {/* Farmer Image (moving horizontally only) */}
           <motion.div
             className="farmer"
-            animate={{ x: `${(achievements - 1) * 300}%` }} // Move only on the x-axis
+            animate={{ x: `${(achievements - 1) * 400}%` }} // Move only on the x-axis
             transition={{ type: 'spring', stiffness: 50 }}
             style={{ position: 'absolute', bottom: '60%', zIndex: 2 }} // Ensure the girl appears above the plants with z-index
           >
             <img
-              src="/achievement_images/Untitled.jpg"
+              src="/achievement_images/Untitled.png"
               alt="Girl watering plants"
               style={{ width: '80px', height: 'auto' }} // Reduce the size of the farmer
             />
@@ -96,7 +96,7 @@ const AchievementSection = () => {
                 animate={achievements >= level ? 'visible' : 'hidden'}
               >
                 <img
-                  src={achievements >= level ? "/achievement_images/watered_plant.jpg" : "/achievement_images/soil.jpg"}
+                  src={achievements >= level ? "/achievement_images/watered_plant.png" : "/achievement_images/soil.jpg"}
                   alt="Plant"
                   style={{ width: '80px', height: 'auto' }} // Adjust plant size
                 />

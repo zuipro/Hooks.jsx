@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import img1 from './Hero-Images/event.png'; 
 import img2 from './Hero-Images/progress1.png'
 import img3 from './Hero-Images/achieve.png'
+import Location from './location'
 const HeroSection = () => {
   return (
     <div className='Hero-Background'>
@@ -36,8 +37,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
       </div>
+      <Location />
       
     </div>
   );
