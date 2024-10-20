@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Landing.css"; 
+import Home from './Home/Home';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   const canvasRef = useRef(null);
@@ -91,7 +93,9 @@ const Landing = () => {
           <div className="hero-content">
             <h1>Natural Forest <span>HTML / CSS</span></h1>
             <div className="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div>
-            <button className="btn-start">Start Learning</button>
+            <Link to="/Home">
+              <button className="btn-start">Start Learning</button>
+             </Link>
           </div>
         </div>
         <div className="layers__item layer-4">

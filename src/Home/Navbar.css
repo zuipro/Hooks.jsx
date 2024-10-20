@@ -1,0 +1,14 @@
+.nav li {
+    color: white; /* Sets text color of <li> elements within .nav to white */
+    font-size: 1.25rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+   
+}
+
+.nav-link {
+    color: white !important; /* Ensures the link color is white */
+    font-size: 1.25rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    padding: 10px 15px; /* Adjust the padding as needed */
+    text-align: center; /* Center-aligns the text within the block */
+}
