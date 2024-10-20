@@ -36,6 +36,7 @@
     justify-content: center; 
     gap: 50px; /* Adjust the spacing between the cards */
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .card1, .card2, .card3 {
